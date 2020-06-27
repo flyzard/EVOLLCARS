@@ -1,0 +1,143 @@
+
+body {
+    margin: 0;
+}
+
+* { box-sizing: border-box;  font-family: 'Montserrat', sans-serif;}
+.container { width: 100%; display: flex; flex-direction: row; flex-wrap: wrap; background:white; }
+
+.container > .item { width: 50%; height: 25vw;}
+
+.evoleye {
+    background: url(/img/Evoll.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    animation: 1.5s ease-out 0s 1 slideInFromLeft;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.evologo {
+    background: url(/img/Evoll_logo.png) no-repeat center center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    padding: 0 2rem;
+    background-origin:content-box;
+}
+.evolorange {
+    background: url(/img/Evoll_orange.JPG) no-repeat center center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    padding: 0 2rem;
+}
+
+.evoltext {
+    color: #008556;
+    text-align: center;
+    font-weight: 500;
+    padding: 0 1rem;
+}
+
+.evoltext > p {
+    font-size: x-large;
+}
+.evoltext > h1 {
+    padding: 2rem 0;
+}
+
+
+.evoltext > p > a {
+    color: #008556;   
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+.container > .item { width: 100%; height: 50vw;}
+    .evoleye {
+        order: 1;
+    }
+    .evologo {
+        order: 2;
+    }
+    .evolorange {
+        order: 4;
+    }
+    .evoltext {
+        order: 3;
+        height: auto;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .container > .item { width: 100%; height: 50vw;}
+    .evoleye {
+        order: 1;
+    }
+    .evologo {
+        order: 2;
+    }
+    .evolorange {
+        order: 4;
+    }
+    .evoltext {
+        order: 3;
+        height: auto;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .container > .item { width: 50%; height: 25vw;}
+    .evoleye {
+        order: 1;
+    }
+    .evologo {
+        order: 2;
+    }
+    .evolorange {
+        order: 3;
+    }
+    .evoltext {
+        order: 4;
+        height: auto;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
+
+footer {
+    display: flex;
+    align-items:center;
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+    color: #6c757d;
+    font-size: 12px;
+}
+
+footer > a > img {
+    max-height: 75px;
+}
