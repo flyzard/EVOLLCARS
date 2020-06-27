@@ -78,7 +78,7 @@ body {
     }
     .evoltext {
         order: 3;
-        height: auto;
+        height: fit-content !important;
     }
 }
 
@@ -96,7 +96,7 @@ body {
     }
     .evoltext {
         order: 3;
-        height: auto;
+        height: fit-content !important;
     }
 }
 
